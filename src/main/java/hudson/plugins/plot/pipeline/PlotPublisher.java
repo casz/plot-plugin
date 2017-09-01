@@ -70,9 +70,9 @@ public class PlotPublisher extends Recorder implements SimpleBuildStep {
             return "Plots";
         }
         if (groupMap.containsKey(urlGroup)) {
-            List<Plot> plots = groupMap.get(urlGroup);
-            if (CollectionUtils.isNotEmpty(plots)) {
-                return plots.get(0).group;
+            List<Plot> plotList = groupMap.get(urlGroup);
+            if (CollectionUtils.isNotEmpty(plotList)) {
+                return plotList.get(0).group;
             }
         }
         return "";
